@@ -24,7 +24,7 @@ public class BaseActivity extends FragmentActivity  implements OnCreatePanelMenu
 	protected ActionBarSherlock mSherlock = ActionBarSherlock.wrap(this);
 	private Menu mMenu;
 	protected int current = 0;
-	public static final String [] lables = {"拨号","联系人","群组","设置"};
+	public static String [] lables;
 	 public static final  String [] tags = {"call","person","group","setting"};
 	 public static final  int [] light_icons = {R.drawable.l_device_access_ring_volume,R.drawable.l_social_person,R.drawable.l_social_group,R.drawable.l_action_settings};
 	 public static final  int []  dark_icons = {R.drawable.d_device_access_ring_volume,R.drawable.d_social_person,R.drawable.d_social_group,R.drawable.d_action_settings};
@@ -34,6 +34,7 @@ public class BaseActivity extends FragmentActivity  implements OnCreatePanelMenu
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
 		setTheme(R.style.contacts);
+		lables = getResources().getStringArray(R.array.tablables);
 	    super.onCreate(savedInstanceState);
 	    mSherlock.setContentView(R.layout.baseactivity);
 	    

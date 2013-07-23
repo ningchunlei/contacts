@@ -7,4 +7,11 @@
         <item>呼出记录</item>
         <item>呼入记录</item>
     </string-array>
+    
+    <string-array name="tablables">
+        <item>拨号</item>
+        <item>联系人</item>
+        <item>群组</item>
+        <item>设置</item>
+    </string-array>
 </resources>
