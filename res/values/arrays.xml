@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="call">
+        <item>通话记录</item>
+        <item>未接记录</item>
+        <item>呼出记录</item>
+        <item>呼入记录</item>
+    </string-array>
+</resources>
