@@ -24,6 +24,7 @@ public class BaseActivity extends FragmentActivity  implements OnCreatePanelMenu
 	protected ActionBarSherlock mSherlock = ActionBarSherlock.wrap(this);
 	private Menu mMenu;
 	protected int current = 0;
+
 	public static String [] lables;
 	 public static final  String [] tags = {"call","person","group","setting"};
 	 public static final  int [] light_icons = {R.drawable.l_device_access_ring_volume,R.drawable.l_social_person,R.drawable.l_social_group,R.drawable.l_action_settings};
