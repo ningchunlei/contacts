@@ -4,5 +4,17 @@
     <string name="app_name">contacts</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-
+	
+    <string name="calltitle">通话记录</string>
+    <string name="cardtitle">名片设置</string>
+    
+    <string name="nameLable">姓名</string>
+    <string name="photoLable">来电秀</string>
+    <string name="phoneLable">电话</string>
+    <string name="ringLable">铃声秀</string>
+    <string name="companyLable">公司</string>
+    <string name="jobLable">职位</string>
+    
+    
+    <string name="menuSave">保存</string>
 </resources>

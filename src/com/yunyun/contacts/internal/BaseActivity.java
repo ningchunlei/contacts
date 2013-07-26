@@ -6,6 +6,7 @@ import com.actionbarsherlock.ActionBarSherlock.OnCreatePanelMenuListener;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.view.Menu;
 import com.yunyun.contacts.CallFragment;
+import com.yunyun.contacts.CardFragment;
 import com.yunyun.contacts.MainActivity;
 import com.yunyun.contacts.R;
 
@@ -29,7 +30,7 @@ public class BaseActivity extends FragmentActivity  implements OnCreatePanelMenu
 	 public static final  String [] tags = {"call","person","group","setting"};
 	 public static final  int [] light_icons = {R.drawable.l_device_access_ring_volume,R.drawable.l_social_person,R.drawable.l_social_group,R.drawable.l_action_settings};
 	 public static final  int []  dark_icons = {R.drawable.d_device_access_ring_volume,R.drawable.d_social_person,R.drawable.d_social_group,R.drawable.d_action_settings};
-	 public static final Class[] fragments = {CallFragment.class,CallFragment.class,CallFragment.class,CallFragment.class};
+	 public static final Class[] fragments = {CallFragment.class,CallFragment.class,CallFragment.class,CardFragment.class};
 	private  TabManager tabManager;
 
 	@Override

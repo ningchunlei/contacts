@@ -10,6 +10,7 @@ import com.yunyun.contacts.internal.TitleBar;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,7 +35,7 @@ public class CallFragment extends Fragment implements TitleBar{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.callfragment, container, false);
-        textView1 = (TextView) v.findViewById(R.id.textView1);
+        textView1 = (TextView) v.findViewById(R.id.nameLable);
         textView1.setText("TextView1");
         return v;
     }
@@ -43,7 +44,10 @@ public class CallFragment extends Fragment implements TitleBar{
 	@Override
 	public View createTitleBar(Context context) {
 		// TODO Auto-generated method stub
-       ArrayAdapter<CharSequence> list = ArrayAdapter.createFromResource(context, R.array.call, R.layout.sherlock_spinner_item);
+	   TextView v = new TextView(context);
+	   v.setGravity(Gravity.CENTER);
+	   v.setText(R.string.calltitle);
+       /*ArrayAdapter<CharSequence> list = ArrayAdapter.createFromResource(context, R.array.call, R.layout.sherlock_spinner_item);
        list.setDropDownViewResource(R.layout.sherlock_spinner_dropdown_item);
        
        IcsSpinner mSpinner = new IcsSpinner(context, null,
@@ -58,17 +62,17 @@ public class CallFragment extends Fragment implements TitleBar{
                // Do nothing
            }
        });
-       mSpinner.setSelection(titleBarIndex);
-	   return mSpinner;
+       mSpinner.setSelection(titleBarIndex);*/
+	   return v;
 	}
 
 
 	@Override
 	public boolean onCreatePanelMenu(Menu menu) {
-
+/*
         menu.add("Save")
-            .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);
-        return true;
+            .setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS | MenuItem.SHOW_AS_ACTION_WITH_TEXT);*/
+        return false;
 	}
 	
 }
